@@ -11,7 +11,19 @@
 
     <main class="container page-content">
         <h1>Ofertas de Empleo Activas (SEF)</h1>
-        <p>Listado actualizado diariamente con las últimas vacantes de trabajo en la Región de Murcia. Haz clic en las ofertas para ir directamente a la inscripción oficial.</p>
+        <p>Listado actualizado diariamente con las últimas vacantes de trabajo. Selecciona tu zona para filtrar al instante.</p>
+        
+        <div class="filtro-zona" style="margin: 20px 0; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <label for="selector-zona" style="font-weight: bold; margin-right: 10px;">📍 Tu municipio:</label>
+            <select id="selector-zona" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;">
+                <option value="todas">Toda la Región de Murcia</option>
+                <option value="murcia">Murcia Capital</option>
+                <option value="cartagena">Cartagena</option>
+                <option value="lorca">Lorca</option>
+                <option value="molina">Molina de Segura</option>
+            </select>
+            <span id="ultima-actualizacion" style="float: right; color: #666; font-size: 0.9rem; margin-top: 8px;"></span>
+        </div>
         
         <div id="datos-api" class="datos-grid">
             <p><i>Rastreando las últimas ofertas de empleo...</i></p>

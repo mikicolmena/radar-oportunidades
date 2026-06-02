@@ -3,7 +3,7 @@ name: Motor Radar SEF
 # ¿Cuándo se ejecuta esto?
 on:
   schedule:
-    - cron: '0 8 * * *' # Todos los días a las 8:00 AM (Hora UTC)
+    - cron: '0 8,13,18 * * *' # Todos los días a las 8:00 AM (Hora UTC)
   workflow_dispatch: # Esto te pone un botón en GitHub para ejecutarlo a mano cuando quieras
 
 jobs:
